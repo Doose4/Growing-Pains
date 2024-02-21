@@ -3,17 +3,15 @@
 
 using namespace std;
 
-class DynamicArray
-{
-private:
-    int* arr[1];
-    int* top;
-    int* start;
-    void resize(int new_size);
+int* arr[1];
+int* top;
+int* start;
+int resize(int* arr, const int new_size);
 
-public:
-    void append_element(int element);
-    int get_element_at_index(int index);
-    int size();
-    void reset();
+void append_element(int element);
+int get_element_at_index(int index);
+int size();
+void reset(){
+
+
 };
