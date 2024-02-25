@@ -129,12 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Helpers.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Test.cpp" />
-    <ClCompile Include="UpdArr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers.hpp" />
-    <ClInclude Include="UpdArr.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

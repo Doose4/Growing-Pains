@@ -2,5 +2,20 @@
 
 using namespace std;
 
-void print_garden(int* garden, int size);
-void print_message(int veg);
+class Myarray
+{
+private:
+	int max = 1;
+	int* array_pntr;
+	int* top;
+	int* start = top;
+	int* resize_array();
+
+public:
+	explicit Myarray();
+	void append_element(int element);
+	int get_element_at_index(int index);
+	int arraysize();
+	void reset();
+};
+
