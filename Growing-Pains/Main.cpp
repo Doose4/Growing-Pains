@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Helpers.hpp"
 #include "ArithmeticDynamicArray.hpp"
+#include "GeometricDynamicArray.hpp"
 
 using namespace std;
 
@@ -62,7 +63,7 @@ int tester()
     }
 
 
-    //test aritmatic array
+    //test Arthmetic array
     cout << endl << "Now testing arithmetic arrays... " << endl;
     Arithmeticarray dyna = Arithmeticarray(4);
     in_progress = true;
@@ -88,6 +89,34 @@ int tester()
     }
 
     cout << dyna.maxsize() << endl;
+
+
+    //Testing Geometric Array
+    cout << endl << "Now testing Geometric arrays... " << endl;
+    GeometricArray Geo;
+    in_progress = true;
+    j = 0;
+    siz = 4;
+    while (in_progress)
+    {
+        Geo.append_element(6-j);
+        cout << "Value at location " << Geo.get_element_at_index(j) << endl;
+        int siz = Geo.arraysize();
+        cout << "The size of the array is now: " << siz << endl;
+        if (j > 4)
+        {
+            in_progress = false;
+        }
+        j++;
+    }
+
+    for (int i = 0; i < siz; i++)
+    {
+        ele = Geo.get_element_at_index(i);
+        cout << "Value at location " << i + 1 << " is: " << ele << endl;
+    }
+
+    cout << Geo.maxsize() << endl;
 
     return 0;
 }
