@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArithmeticDynamicArray.cpp" />
+    <ClCompile Include="GeometricDynamicArray.cpp" />
     <ClCompile Include="Helpers.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArithmeticDynamicArray.hpp" />
+    <ClInclude Include="GeometricDynamicArray.hpp" />
     <ClInclude Include="Helpers.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
